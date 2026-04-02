@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --color-saffron: #C89B3C;
+  --color-gold: #D4AF37;
+  --color-cream: #FDFBF7;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body {
+  @apply bg-cream text-gray-900 font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
+
+.premium-shadow {
+  box-shadow: 0 10px 30px -10px rgba(200, 155, 60, 0.15);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C89B3C 0%, #D4AF37 100%);
+}
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
